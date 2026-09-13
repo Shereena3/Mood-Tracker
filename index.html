@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Mood Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Daily Mood Tracker</h1>
+        <p class="intro">How are you feeling today?</p>
+
+        <!-- CLICK -->
+        <div class="card">
+            <h2>Choose Your Mood</h2>
+
+            <div class="moods">
+                <button class="mood" data-mood="Happy"> Haaafi</button>
+                <button class="mood" data-mood="Okay"> Kinda </button>
+                <button class="mood" data-mood="Sad"> Huhuhu</button>
+                <button class="mood" data-mood="Excited"> YAAAAYYY </button>
+            </div>
+
+            <p id="moodResult">Choose a mood above.</p>
+        </div>
+
+
+        <!-- INPUT -->
+        <div class="card">
+            <h2>Your Name</h2>
+
+            <input
+                type="text"
+                id="nameInput"
+                placeholder="Enter your name"
+            >
+
+            <p id="nameResult">Hello!</p>
+        </div>
+
+
+        <!-- MOUSEOVER / MOUSEOUT -->
+        <div class="card quote-card" id="quoteCard">
+
+            <h2>Daily Reminder</h2>
+
+            <p id="quote">
+                Hover over this card for a reminder.
+            </p>
+
+        </div>
+
+
+        <!-- KEYDOWN -->
+        <div class="card">
+
+            <h2>Keyboard Check</h2>
+
+            <div class="key-box" id="keyBox">
+                Press any key...
+            </div>
+
+        </div>
+
+
+        <!-- SUBMIT -->
+        <div class="card">
+
+            <h2>Write a Short Note</h2>
+
+            <form id="noteForm">
+
+                <textarea
+                    id="noteInput"
+                    placeholder="Write something..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Save Note
+                </button>
+
+            </form>
+
+            <p id="noteResult"></p>
+
+        </div>
+
+
+        <!-- REMOVE EVENT -->
+        <div class="card">
+
+            <h2>Lucky Button</h2>
+
+            <p>Click it for a little inspiring message!!</p>
+
+            <button id="luckyButton">
+                Bipbooop
+            </button>
+
+            <p id="luckyResult"></p>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
